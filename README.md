@@ -6,6 +6,11 @@ It relies on Sphinx's [intersphinx extension](http://sphinx-doc.org/latest/ext/i
 
 Idea revolves around having a shared repository with all inventories (indexes) for all projects. Those can then be reused and referenced by other documentations. Index is updated after build (every project must update its inventory file) and stored in a docker repository to reuse build and authentication structure that's already in place for it.
 
+## Try it out
+
+* `./build.sh`
+* `open ./example-intersphinx-project/build/html/index.html`
+
 ## Repository Structure
 
 * `example-standalone-docs` contains minimal spinx documentation with glossary that defines a term
@@ -24,7 +29,7 @@ The whole build relies on Docker, and utilises Apiary's [base Sphinx image](http
 * Copy its inventory file to shared inventory folder
 * Build minimalistic Docker image out of it
 * Mount it as a volume to `example-standalone-docs`
-* Build `example-standalone-docs`
+* Build `example-intersphinx-project`
 * In this case, remove interim `shared-inventory` container
 
 The whole idea, of course, is for `shared-inventory` to be preserved in Docker registry.
