@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine
 
-ADD ./inventories /inventories
+COPY ./inventories /inventories
 
 VOLUME ["/inventories"]
