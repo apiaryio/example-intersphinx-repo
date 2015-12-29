@@ -1,6 +1,6 @@
 # Example Intersphinx Repository
 
-This repository demonstrates a possible approach for maintaining a collection internal, cross-referenced documentations.
+This repository demonstrates a possible approach for maintaining a collection of internal, cross-referenced documentations.
 
 It relies on Sphinx's [intersphinx extension](http://sphinx-doc.org/latest/ext/intersphinx.html).
 
@@ -13,7 +13,7 @@ Idea revolves around having a shared repository with all inventories (indexes) f
 
 ## Repository Structure
 
-* `example-standalone-docs` contains minimal spinx documentation with glossary that defines a term
+* `example-standalone-docs` contains minimal Sphinx documentation with glossary that defines a term
 * `shared-invs` is a "dummy folder" that contains inventory artifacts. After build, `objects.inv` index file (required by intersphinx) is copied there (as `other-project.inv`)
 * `example-intersphinx-project` references a term defined in `example-standalone-docs`. Take a look at:
 	* [index.rst](example-intersphinx-project/source/index.rst) to discover how a term can be referenced
